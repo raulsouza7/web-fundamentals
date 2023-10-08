@@ -2,9 +2,10 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Ovo', Arial, sans-serif; /* Change the font-family for body */
     background-color: #fcfbfb;
     color: #000; /* Set the default text color */
+    font-size: 22px; /* Increase the default font-size for the whole page */
 }
 
 /* Center the content by setting a max-width and using margin */
@@ -55,7 +56,7 @@ nav a:hover {
 }
 
 .home-title {
-    font-size: 2em;
+    font-size: 2em; /* Increase font size for .home-title */
 }
 
 .button-box {
@@ -69,6 +70,7 @@ nav a:hover {
     color: #fcfbfb;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 5px; /* Add border radius */
 }
 
 .book:hover, .join:hover {
@@ -96,6 +98,8 @@ nav a:hover {
 
 .card-img {
     width: 80px;
+    border: 10px solid #d9c2a3; /* Add border with specified color */
+    box-sizing: border-box; /* Include border in the size of images */
 }
 
 /* Mountains image */
