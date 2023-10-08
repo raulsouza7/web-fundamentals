@@ -1,8 +1,11 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 /* Reset some default styles for body */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Ovo', Arial, sans-serif; /* Change the font-family for body */
+    font-family: 'Raleway', Arial, sans-serif; /* Change the font-family for body */
     background-color: #fcfbfb;
     color: #000; /* Set the default text color */
     font-size: 22px; /* Increase the default font-size for the whole page */
@@ -112,6 +115,7 @@ nav a:hover {
 .msg {
     text-align: left;
     margin: 20px 0;
+    line-height: 1.5em; /* Increase line height */
 }
 
 /* Footer styles */
