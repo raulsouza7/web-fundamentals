@@ -3,144 +3,146 @@
 
 /* Reset some default styles for body */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Ovo', Arial, sans-serif; /* Change the font-family for body */
-    background-color: #fcfbfb;
-    color: #000; /* Set the default text color */
-    font-size: 18px; /* Adjust the default font-size for the whole page */
+  margin: 0;
+  padding: 0;
+  font-family: 'Ovo', Arial, sans-serif;
+  background-color: #fcfbfb;
+  color: #000;
+  font-size: 18px;
 }
 
 /* Center the content by setting a max-width and using margin */
 #content {
-    max-width: 1600px;
-    margin: 0 auto;
+  max-width: 1600px;
+  margin: 0 auto; /* Center the content */
 }
 
 /* Header styles */
 header {
-    background-color: #1E1E1E;
-    padding: 10px 0;
+  background-color: #1E1E1E;
+  padding: 10px 0;
 }
 
 #logo_link {
-    text-decoration: none;
-    display: inline-block;
-}
-
-#background {
-    height: 725px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 /* Navigation styles */
 nav {
-    text-align: center;
+  text-align: center;
 }
 
 nav a {
-    text-decoration: none;
-    color: #ffffff;
-    margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 15px;
 }
 
 nav a:hover {
-    background-color: black;
-    color: #de8a1d;
+  background-color: black;
+  color: #de8a1d; /* Change color on hover */
 }
 
 /* Hero section styles */
 #hero {
-    text-align: center;
-    padding: 20px 0;
+  text-align: center;
+  padding: 20px 0;
 }
 
 #hero-img {
-    width: 100%; /* Make the hero image responsive */
+  width: 100%; /* Make the hero image responsive */
 }
 
 /* Hero message styles */
 #hero-msg {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .home-title {
-    font-size: 2em; /* Increase font size for .home-title */
+  font-size: 2em; /* Increase font size for .home-title */
 }
 
 .button-box {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .book, .join {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fcfbfb;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px; /* Add border radius */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fcfbfb;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 .book:hover, .join:hover {
-    background-color: #333;
+  background-color: #333; /* Change background on hover */
 }
 
 /* Main content grid styles */
 .home-grid {
-    text-align: center;
-    margin: 20px 0;
+  text-align: center;
+  margin: 20px 0;
 }
 
 /* Card styles */
 .home-grid .rivers-card,
 .home-grid .camping-card,
 .home-grid .rapids-card {
-    display: inline-block;
-    vertical-align: top;
-    width: 30%;
-    margin: 0 2%;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin: 0 2%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card-img {
-    width: 80px;
-    border: 10px solid #d9c2a3; /* Add border with specified color */
-    box-sizing: border-box; /* Include border in the size of images */
+  width: 80px;
+  border: 10px solid #d9c2a3;
+  box-sizing: border-box;
 }
 
 /* Mountains image */
 .mountains {
-    width: 100%;
-    margin-top: 20px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 /* Message section styles */
 .msg {
-    text-align: left;
-    margin: 20px 0;
-    line-height: 1.5em; /* Increase line height */
+  text-align: left;
+  margin: 20px 0;
+  line-height: 1.5em;
+}
+
+/* Background container for message */
+#background {
+  height: 725px;
+  background-color: #d9c2a3; 
 }
 
 /* Footer styles */
 footer {
-    background-color: #333;
-    color: #fcfbfb;
-    padding: 20px 0;
-    text-align: center;
+  background-color: #333;
+  color: #fcfbfb;
+  padding: 20px 0;
+  text-align: center;
 }
 
 footer p {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .social {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .social a {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 /* Remove underlines from links and add underline on hover */
@@ -148,12 +150,12 @@ nav a,
 .book,
 .join,
 footer a {
-    text-decoration: none; /* Remove underline */
+  text-decoration: none;
 }
 
 nav a:hover,
 .book:hover,
 .join:hover,
 footer a:hover {
-    text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline; /* Add underline on hover */
 }
