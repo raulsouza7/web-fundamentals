@@ -5,39 +5,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-page2.css">
+    <link rel="stylesheet" type="text/css" href="style-page2.css">
     <title>Rates/Dates</title>
 </head>
+
+<style>
+    /* Define color variables */
+    :root {
+        --primary-color: #000000;  /* swapped colors */
+        --secondary-color: #FB8500;  /* swapped colors */
+        --accent1-color: #ffffff;
+        --accent2-color: #00B4D8;
+    }
+
+    /* Default styles */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Ovo' , 'Arial', sans-serif;
+        background-color: var(--accent1-color);
+        color: var(--secondary-color);
+        font-size: 18px;
+        text-align: center;  /* center the text */
+    }
+
+    h1, h2, h3, p {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Page title styles */
+    .title-overlay {
+        background-color: rgba(0, 0, 0, 0.7);  /* changed to black with transparency */
+        padding: 10px;
+        text-align: center;
+        color: var(--accent1-color);
+        margin-bottom: 20px;
+        position: absolute; /* position the title over the image */
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    .banner-image {
+        width: 100%;
+        position: relative;  /* added to control positioning of children */
+        z-index: 1;
+    }
+
+    /* Trip information styles */
+    .trip-info {
+        padding: 20px;
+        background-color: var(--accent2-color);
+        margin: 20px 0;
+        border-radius: 10px;
+        color: var(--accent1-color);
+    }
+
+    .trip-title {
+        color: var(--primary-color);
+        font-size: 24px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid var(--secondary-color);
+        padding-bottom: 10px;
+    }
+
+    .trip-image {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;  /* makes margin auto work */
+        border-radius: 10px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    footer a {
+        text-decoration: none;
+        color: var(--primary-color);
+        padding: 5px;
+        transition: color 0.3s;
+    }
+
+    footer a:hover {
+        color: var(--accent2-color);
+    }
+</style>
+
+ 
 
 <body>
     <h1 class="title-overlay">Rates/Dates</h1>
     <img src="https://byui-wdd.github.io/wdd130/resources/images/hero_transparency_1024.png" alt="River Banner" class="banner-image">
 
     <div class="trip-info">
-        <h2 class="trip-title">GRAND CANYON THREE-NIGHT TRIP</h2>
+        <h2 class="trip-title">GRAND CANYON (3 Night Trip)</h2>
         <p>2016 Pricing and Dates Grand Canyon 3 night trips: $1,475</p>
-        <p>April 30 May 13, 20, 27, 30 June 3, 10, 17, 24, 28 July 1, 8, 15, 22, 29 August 5, 12, 19, 26 September 9, 17</p>
+        <p>April 30 May 13, 20, 27, 30 - June 3, 10, 17, 24, 28 - July 1, 8, 15, 22, 29 August - 5, 12, 19, 26 - September 9, 17</p>
         <img src="https://byui-wdd.github.io/wdd130/resources/images/rafting65_600.jpg" alt="Grand Canyon Three Night Trip" class="trip-image">
     </div>
 
     <div class="trip-info">
-        <h2 class="trip-title">GRAND CANYON SIX-NIGHT TRIP</h2>
-        <p>(The dates listed will be the date that you spend the night in Marble Canyon. The launch date is the following day.) 2016 Pricing and Dates Grand Canyon 6 night trips: $2,550</p>
-        <p>April 25 May 8, 15, 22, 25, 29 June 5, 12, 19, 23, 26 July 3, 10, 17, 24, 31 August 7, 14, 21 September 4, 12</p>
+        <h2 class="trip-title">GRAND CANYON (6 Night Trip)</h2>
+        <p></p>2016 Pricing and Dates Grand Canyon 6 night trips: $2,550</p>
+        <p>April 25 - May 8, 15, 22, 25, 29 - June 5, 12, 19, 23, 26 - July 3, 10, 17, 24, 31 - August 7, 14, 21 - September 4, 12</p>
+        <p>(The dates listed will be the date that you spend the night in Marble Canyon. The launch date is the following day.)</p>
+
         <img src="https://byui-wdd.github.io/wdd130/resources/images/rafting43_600.jpg" alt="Grand Canyon Six Night Trip" class="trip-image">
     </div>
 
     <div class="trip-info">
-        <h2 class="trip-title">Salmon River 5 night trip</h2>
-        <p>(The dates listed will be the date that you spend the night in Salmon. The launch date is the following day.) 2016 Pricing and Dates Regular Rate: $1,540</p>
-        <p>Trip Dates June 3, 10, 17, 24 July 2</p>
+        <h2 class="trip-title">Salmon River (5 Night Trip)</h2>
+        <p></p>2016 Pricing and Dates Regular Rate: $1,540</p>
+        <p>Trip Dates: June 3, 10, 17, 24 - July 2</p>
+        <p>(The dates listed will be the date that you spend the night in Salmon. The launch date is the following day.)</p>
+    
         <img src="https://byui-wdd.github.io/wdd130/resources/images/rafting59_600.jpg" alt="Grand Canyon Six Night Trip" class="trip-image">
     </div>
 
     <div class="trip-info">
-        <h2 class="trip-title">Desolation 6 night Trip</h2>
+        <h2 class="trip-title">Desolation (6 Night Trip)</h2>
         <p>2016 Pricing and Dates Regular Rate: $1,790</p>
-        <p>Trip Dates July 10, 18, 26 Aug 3, 11, 19, 27 Sept 4</p>
+        <p>Trip Dates: July 10, 18, 26 - August 3, 11, 19, 27 -  September 4</p>
         <img src="https://byui-wdd.github.io/wdd130/resources/images/rafting52_600.jpg" alt="Grand Canyon Six Night Trip" class="trip-image">
     </div>
 
