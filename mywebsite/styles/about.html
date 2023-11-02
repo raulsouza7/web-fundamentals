@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sunlight Web Design</title>
+    <style>
+        :root {
+            --primary-color: #FF5D50;
+            --secondary-color: #83E9F4;
+            --accent1-color: #011A38;
+            --accent2-color: #FFFFFF;
+            --heading-font: "Cinzel Decorative", cursive;
+            --paragraph-font: "Ovo", serif;
+        }
+
+        body {
+            font-family: var(--paragraph-font);
+            margin: 0;
+            padding: 0;
+            background-color: var(--accent2-color);
+            line-height: 1.6;
+            color: var(--accent1-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            width: auto;
+            height: 60px;
+            margin-right: 10px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .logo img:hover {
+            transform: scale(1.1);
+        }
+
+        .logo {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        nav {
+            flex: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--accent1-color);
+            font-weight: bold;
+            padding: 10px 30px;
+            border-radius: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--accent2-color);
+            color: var(--primary-color);
+        }
+
+        main {
+            padding: 40px 10%;
+        }
+
+        section {
+            margin: 50px 0;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--heading-font);
+            color: var(--primary-color);
+        }
+
+        .book, .join {
+            background-color: var(--accent1-color);
+            padding: 10px 30px;
+            color: var(--accent2-color);
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 50px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .book:hover, .join:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 15px;
+            margin: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        form {
+            background-color: var(--secondary-color);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid var(--primary-color);
+            border-radius: 15px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: var(--accent2-color);
+            padding: 10px 30px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--accent1-color);
+            transform: translateY(-3px);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://th.bing.com/th/id/OIG.HdWQdSlywrSHY9NtuqxD?w=173&h=173&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="Sunlight Web Design Logo">
+        </div>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="competitors.html">Why us?</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+                <!-- About Section -->
+                <section id="about">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Raul Souza, the spirit behind Sunlight Web Design. Over the years, I've honed my skills in the realm of web design, focusing on marrying aesthetics with utility. I fervently believe in the transformative power of thoughtful design – its ability to communicate, captivate, and catalyze action. Let me take you on a journey where your vision melds with digital artistry to create something truly spectacular.</p>
+                    <img src="https://media.licdn.com/dms/image/C4D03AQHGddvZis2zFA/profile-displayphoto-shrink_400_400/0/1621273855777?e=1703116800&v=beta&t=_PWfAyqaw1AgzyJRk1SP6OHZEIZxl49CN-fOuP1Mcd0" alt="Image of Raul Souza">
+                    <img src="https://3.imimg.com/data3/YM/WA/MY-9813819/web-designing-250x250.jpg" alt="Web Design Image">
+                </section>
+            </main>
+        </body>
+        </html>
