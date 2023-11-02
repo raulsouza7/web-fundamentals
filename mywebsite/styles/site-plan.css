@@ -136,25 +136,48 @@ nav a:hover {
     ". left left right right ."
     "page2 page2 . . page3 page3";
 }
-.sitemap > div {
-
-  text-align: center;
-
+.sitemap {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3em 0.5em 3em;
+  grid-template-areas: "home home home home"
+                       "left-line center-line right-line1 right-line2"
+                       "page2 page3 page4 page5";
+  gap: 1em;
+  position: relative;
 }
+
+.sitemap > div {
+  text-align: center;
+}
+
 .sm-home {
   grid-area: home;
   background-color: #ccc;
   line-height: 3em;
+  grid-column: span 4;
 }
+
+.sm-page2, .sm-page3, .sm-page4, .sm-page5 {
+  background-color: #ccc;
+  line-height: 3em;
+}
+
 .sm-page2 {
   grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
 }
+
 .sm-page3 {
   grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
+}
+
+.sm-page4 {
+  grid-area: page4;
+}
+
+.sm-page5 {
+  grid-area: page5;
 }
 
 .top {
