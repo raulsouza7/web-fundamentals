@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sunlight Web Design</title>
+    <title>Contact Us</title>
     <style>
         :root {
             --primary-color: #FF5D50;
@@ -154,6 +154,19 @@
             transform: translateY(-3px);
         }
 
+        /* Additional CSS */
+        #feedback {
+            background-color: antiquewhite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: .5em;
+            display: none;      
+        }
+        .moveDown {
+            margin-top: 3em;
+        }
     </style>
 </head>
 
@@ -173,25 +186,42 @@
     </header>
 
     <main>
-                <!-- Contact Section -->
-                <section id="contact">
-                    <h3>Contact</h3>
-                    <p>We're not just about creating websites; we're about forging connections. If you have queries, ideas, or simply wish to chat about the endless possibilities the digital world holds, reach out to us. Whether it's through our contact form, an email, or even a good old-fashioned phone call, we're here, eager to illuminate your digital aspirations.</p>
-                    <img src="https://th.bing.com/th/id/OIG.zbSlw2VyGBRePs8yTdd3?w=173&h=173&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="Get in touch image 1">
-                    <img src="https://th.bing.com/th/id/OIG.43E.JeWaR_e0bXNpebPs?w=173&h=173&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="Get in touch image 2">
-                    <form>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-        
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-        
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" required></textarea>
-        
-                        <button type="submit">Send Message</button>
-                    </form>
-                </section>
-            </main>
-        </body>
-        </html>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h3>Contact</h3>
+            <p>We're not just about creating websites; we're about forging connections. If you have queries, ideas, or simply wish to chat about the endless possibilities the digital world holds, reach out to us. Whether it's through our contact form, an email, or even a good old-fashioned phone call, we're here, eager to illuminate your digital aspirations.</p>
+            <img src="https://th.bing.com/th/id/OIG.zbSlw2VyGBRePs8yTdd3?w=173&h=173&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="Get in touch image 1">
+            <img src="https://th.bing.com/th/id/OIG.43E.JeWaR_e0bXNpebPs?w=173&h=173&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="Get in touch image 2">
+
+            <!-- Feedback div -->
+            <div id="feedback"></div>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        // JavaScript code
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0];
+        formElement.addEventListener('submit', function(e) {
+            e.preventDefault();
+            feedbackElement.innerHTML = 'Hello '+ formElement.name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            feedbackElement.style.display = "block";
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+
+</body>
+</html>
